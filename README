@@ -13,9 +13,14 @@ Features:
 * very low memory (a few tens of megabytes) and cpu requirements.
 * crawlers run in parallel (by default 96 threads simultaneously).
 
+REQUIREMENTS
+------------
+
+$ sudo apt-get install build-essential libboost-all-dev libssl-dev
+
 COMPILATION
 -----------
-You nned to have the Boost dev libraries installed. It depends on
+You need to have the Boost dev libraries installed. It depends on
 your distribution, but Debian likes have a package called 'libboost-all-dev'
 which should give you all the requirements. When your development environment
 is set up you can simple compile with 'make'.
@@ -61,7 +66,7 @@ report several IP addresses as A records. Note that it might take a few hours
 for DNS settings to propagate over the internet.
 
 If you want the DNS server to report SOA records, please provide an
-e-mailadres (with the @ part replaced by .) using -m.
+e-mail address (with the @ part replaced by .) using -m.
 
 RUNNING AS NON-ROOT
 -------------------
