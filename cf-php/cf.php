@@ -52,11 +52,11 @@ else{
 		$ip_array_split = explode(":",$ip_array_line); //explode string at ":"
 		$ip = $ip_array_split[0]; // [0] is the ip address of the line
 		
-		$pos = strpos($ip_array_split[1], "7890"); //position of 7890
-		$bool_pos=is_bool($pos); //custom ports (!= 7890) not allowed.
+		$pos = strpos($ip_array_split[1], "19427"); //position of 19427
+		$bool_pos=is_bool($pos); //custom ports (!= 19427) not allowed.
 		
 		if (!$bool_pos) {
-			$ip_array_split = str_replace("7890", "", $ip_array_split[1]); //remove port
+			$ip_array_split = str_replace("19427", "", $ip_array_split[1]); //remove port
 			$ip_array_split = trim($ip_array_split); //remove spaces at the start
 			$ip_array_split = substr($ip_array_split,0,1); //get first charakter == the GOOD parameter in the dump file /
 			$good =  $ip_array_split;
